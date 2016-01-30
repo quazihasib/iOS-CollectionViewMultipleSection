@@ -131,8 +131,19 @@
     else if(indexPath.section == 2){
         NSString *str = cell.myLabel.text;
         NSLog(@"Text: %@ section no:%ld item no: %ld", str, indexPath.item, indexPath.section);
+    }
 }
-}
+
+//#pragma mark collection view cell paddings
+//- (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+//    return UIEdgeInsetsMake(0, 0, 0, 0); // top, left, bottom, right
+//}
+//
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+//    
+//    return 35.0;
+//}
+
 
 
 - (void)didReceiveMemoryWarning {
